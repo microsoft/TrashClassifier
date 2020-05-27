@@ -1,13 +1,3 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
----
-
 # Trash Classifier Example Project
 
 <!-- 
@@ -26,7 +16,7 @@ This ReadMe shows you how to create your own Trash Classifier project on a Raspb
 
 ## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+This repository contains the following files:
 
 | File/folder               | Description                                |
 |---------------------------|--------------------------------------------|
@@ -66,6 +56,8 @@ To build this project successfully, you should have some prior knowledge of:
 * 1 JST connector, female end only
 * 2 M-to-F jumper wires
 * 10 F-to-F jumper wires
+* Breadboard, half-size
+* PCB (optional but recommended ideal)
 
 ### Enclosure
 * Project case (e.g. cardboard, wood, or plastic box)
@@ -82,11 +74,11 @@ To build this project successfully, you should have some prior knowledge of:
 1. Export your Lobe ML model in a TensorFlow (TF) format. 
 2. On your PC, open WinSCP and connect to your Pi. Create a *Lobe* folder in your Pi's home directory and create a *model* folder in that directory. Drag the resulting Lobe TF folder contents onto the Pi. Note the file path: /home/pi/Lobe/model
 3. On the Pi, open a terminal and download the [lobe-python library](https://github.com/lobe/lobe-python) for Python3:
-    '''
+    ```
     pip3 install setuptools
     pip3 install tensorflow==1.13.1
     pip3 install git+https://github.com/lobe/lobe-python
-    '''
+    ```
 
 4. Download this repo onto the Pi (or download onto your PC and send the example python code to the Pi via WinSCP).
 5. Carefully connect the Pi Camera to Pi (visit the [Pi Foundation getting started guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/1) for more information).
@@ -98,9 +90,9 @@ Once you've connected the hardware to the Pi's GPIO pins, read through the examp
 * Lines 47 and 83: filepath to captured images via Pi Camera
 
 Run the program using Python3 in the terminal window:
-    '''
+    ```
         python3 rpi_trash_classifier.py
-    '''
+    ```
 
 ### Program Overview
 When you first run the program, it will take some time to load the TensorFlow library and the Lobe ML model. When the program is ready to capture an image, the status light (white LED) will pulse.
@@ -140,11 +132,11 @@ When you've successfully tested the program and its hardware, you're ready to fi
 
 Place the enclosure about your trash bins and run the program to get a faster, more reliable way of reducing our waste!
 
-## Contributing
+## Questions, Ideas, and Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+Questions about or ideas for this project? Please let us know! We are always looking to improve our sample code and documentation.
+
+This project also welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
