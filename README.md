@@ -8,7 +8,9 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-The Trash Classifier project, affectionately known as "Where does it go?!", is designed to make throwing things away faster and more reliable. No more standing in front of the rubbish bins for what feels like hours, trying to decipher the markings on the trash to figure out if it's recycable or compostable. No more worrying that you accidentally recycled what *should* have been composted (that cardboard has food on it!) and now the recycling is ruined. 
+<img src="images/Cover-5.jpg" width="400">
+
+The Trash Classifier project, affectionately known as "Where does it go?!", is designed to make throwing things away faster and more reliable. 
 
 The Trash Classifier project uses a Machine Learning model trained in [Lobe](https://github.com/lobe) to identify whether an object goes in the garbage, recycling, compost, or hazardous waste. The model is then loaded onto a Raspberry Pi computer to make it usable wherever you might find rubbish bins! 
 
