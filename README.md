@@ -20,6 +20,7 @@ This repository contains the following files:
 
 | File/folder               | Description                                |
 |---------------------------|--------------------------------------------|
+| `images`                  | Folder containing images for this project  |
 | `rpi_trash_classifier.py` | Trash Classifier Sample Code for the Pi    |
 | `README.md`               | This README file!                          |
 | `LICENSE`                 | The license for the sample.                |
@@ -84,7 +85,7 @@ To build this project successfully, you should have some prior knowledge of:
 5. Carefully connect the Pi Camera to Pi (visit the [Pi Foundation getting started guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/1) for more information).
 6. Follow the wiring diagram below to connect the pushbutton and LEDs to the Pi GPIO pins.
 
-![Wiring Diagram](images/WhereDoesItGo_bb.jpg)
+<img src="images/WhereDoesItGo_bb.jpg" width="400">
 
 ## Running the sample
 Once you've connected the hardware to the Pi's GPIO pins, read through the example code and update any file paths as needed:
@@ -92,7 +93,6 @@ Once you've connected the hardware to the Pi's GPIO pins, read through the examp
 * Lines 47 and 83: filepath to captured images via Pi Camera
 
 Run the program using Python3 in the terminal window:
-
     ```
         python3 rpi_trash_classifier.py
     ```
