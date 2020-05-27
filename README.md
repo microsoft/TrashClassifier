@@ -82,7 +82,9 @@ To build this project successfully, you should have some prior knowledge of:
 
 4. Download this repo onto the Pi (or download onto your PC and send the example python code to the Pi via WinSCP).
 5. Carefully connect the Pi Camera to Pi (visit the [Pi Foundation getting started guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/1) for more information).
-6. Follow the wiring diagram to connect the pushbutton and LEDs to the Pi GPIO pins.
+6. Follow the wiring diagram below to connect the pushbutton and LEDs to the Pi GPIO pins.
+
+![Wiring Diagram](images/WhereDoesItGo_bb.jpg)
 
 ## Running the sample
 Once you've connected the hardware to the Pi's GPIO pins, read through the example code and update any file paths as needed:
@@ -90,6 +92,7 @@ Once you've connected the hardware to the Pi's GPIO pins, read through the examp
 * Lines 47 and 83: filepath to captured images via Pi Camera
 
 Run the program using Python3 in the terminal window:
+
     ```
         python3 rpi_trash_classifier.py
     ```
@@ -116,9 +119,9 @@ A few things to note:
 * The prediction labels must be exactly as written in the led_select() function, including capitalization, punctuation, and spacing. Be sure to change these if you have a different Lobe model.
 * The Pi requires a steady power supply. The Pi's power light should be bright, solid red.
 * If one or more LEDs are not turning on when expected, check by forcing them on with the command:
-    '''
+    ```
         red_led.on()
-    '''
+    ```
 
 ## Build the Enclosure
 Create an enclosure for your Pi that will hold the camera, pushbutton, and LEDs in place while also protecting the Pi. 
