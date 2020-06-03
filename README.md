@@ -41,7 +41,7 @@ To build this project successfully, you should have some prior knowledge of:
 
 ### Software (PC-side)
 * Lobe
-* WinSCP (or other SSH file transfer method)
+* [WinSCP](https://winscp.net/eng/index.php) (or other SSH file transfer method, can use [CyberDuck](https://cyberduck.io/) for Mac)
 * Terminal  
 * Remote Desktop Connection or RealVNC
 
