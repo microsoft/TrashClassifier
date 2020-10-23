@@ -74,13 +74,11 @@ To build this project successfully, you should have some prior knowledge of:
 * Hot melt tool (or other non-conductive glue -- epoxy works great but is 100% permanent)
 
 ## Setup
-1. Export your Lobe ML model in a TensorFlow (TF) format. 
-2. On your PC, open WinSCP and connect to your Pi. Create a *Lobe* folder in your Pi's home directory and create a *model* folder in that directory. Drag the resulting Lobe TF folder contents onto the Pi. Note the file path: /home/pi/Lobe/model
+1. Export your Lobe ML model in a TensorFlow Lite (TF Lite) format. 
+2. On your PC, open WinSCP and connect to your Pi. Create a *Lobe* folder in your Pi's home directory and create a *model* folder in that directory. Drag the resulting Lobe TF Lite folder contents onto the Pi. Note the file path: /home/pi/Lobe/model
 3. On the Pi, open a terminal and download the [lobe-python library](https://github.com/lobe/lobe-python) for Python3:
-    ```
-    pip3 install setuptools
-    pip3 install tensorflow==1.13.1
-    pip3 install git+https://github.com/lobe/lobe-python
+    ```sh
+    pip3 install lobe
     ```
 
 4. Download this repo onto the Pi (or download onto your PC and send the example python code to the Pi via WinSCP).
@@ -91,7 +89,7 @@ To build this project successfully, you should have some prior knowledge of:
 
 ## Running the sample
 Once you've connected the hardware to the Pi's GPIO pins, read through the example code and update any file paths as needed:
-* Line 29: filepath to the Lobe TF model 
+* Line 29: filepath to the Lobe TF Lite model directory
 * Lines 47 and 83: filepath to captured images via Pi Camera
 
 Run the program using Python3 in the terminal window:
