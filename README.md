@@ -76,14 +76,18 @@ To build this project successfully, you should have some prior knowledge of:
 ## Setup
 1. Export your Lobe ML model in a TensorFlow Lite (TF Lite) format. 
 2. On your PC, open WinSCP and connect to your Pi. Create a *Lobe* folder in your Pi's home directory and create a *model* folder in that directory. Drag the resulting Lobe TF Lite folder contents onto the Pi. Note the file path: /home/pi/Lobe/model
-3. On the Pi, open a terminal and download the [lobe-python library](https://github.com/lobe/lobe-python) for Python3:
+3. At the moment, Lobe doesn't install TensorFlow Lite Runtime properly. The issue is being tracked here: [lobe/lobe-python#11](https://github.com/lobe/lobe-python/issues/11). To workaround this, on the Pi, open a terminal and download tflite-runtime for Python3:
+    ```sh
+    pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+    ```
+4. On the Pi, open a terminal and download the [lobe-python library](https://github.com/lobe/lobe-python) for Python3:
     ```sh
     pip3 install lobe
     ```
 
-4. Download this repo onto the Pi (or download onto your PC and send the example python code to the Pi via WinSCP).
-5. Carefully connect the Pi Camera to Pi (visit the [Pi Foundation getting started guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/1) for more information).
-6. Follow the wiring diagram below to connect the pushbutton and LEDs to the Pi GPIO pins.
+5. Download this repo onto the Pi (or download onto your PC and send the example python code to the Pi via WinSCP).
+6. Carefully connect the Pi Camera to Pi (visit the [Pi Foundation getting started guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/1) for more information).
+7. Follow the wiring diagram below to connect the pushbutton and LEDs to the Pi GPIO pins.
 
 <img src="images/WhereDoesItGo_bb.jpg" width="400">
 
