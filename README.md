@@ -23,6 +23,7 @@ This repository contains the following files:
 | File/folder               | Description                                |
 |---------------------------|--------------------------------------------|
 | `images`                  | Folder containing images for this project  |
+| `tests`                   | Folder containing tests for connections    |
 | `rpi_trash_classifier.py` | Trash Classifier Sample Code for the Pi    |
 | `README.md`               | This README file!                          |
 | `LICENSE`                 | The license for the sample.                |
@@ -114,7 +115,7 @@ Press the pushbutton to capture an image. Note that you may need to hold the pus
 To allow the user time to position the object and for camera light levels to adjust, it takes about 5s to fully capture an image. You may change these settings in the code (lines 35 and 41), but keep in mind the Pi Foundation recommends a minimum of 2s for light level adjustment.
 
 ### Testing and Troubleshooting
-Before you solder or make any of the connections permanent, be sure to test the code with the hardware.
+Before you solder or make any of the connections permanent, be sure to test the code with the hardware. For example, in the tests/ directory there are some examples that can be run to verify that each component used in the main program (LEDs, the TF model, the button and the camera) is working as it was intended to.
 
 The biggest challenge is ensuring that the captured image is what we expect, so take some time to review the images and compare expected results with indicater LED output. If necessary, you can pass in images to the Lobe ML model for direct inferencing and faster comparison.
 
